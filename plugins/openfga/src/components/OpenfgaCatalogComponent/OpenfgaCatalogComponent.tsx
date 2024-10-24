@@ -253,3 +253,4 @@ export const OpenfgaCatalogComponent = () => {
     </Box>
   );
 };
+

@@ -34,7 +34,7 @@ OpenFGA is available on Dockerhub, so you can quickly start it using the in-memo
 
 ```
 docker pull openfga/openfga
-docker run -p 8080:8080 -p 3000:3000 openfga/openfga run
+docker run -p 8080:8080 -p 4000:4000 openfga/openfga run
 ```
 
 
