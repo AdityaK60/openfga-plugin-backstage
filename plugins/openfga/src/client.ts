@@ -45,7 +45,7 @@ export async function sendPermissionRequest(entityName: string, action: string, 
     throw new Error(`OpenFGA API call failed with status: ${response.status}`);
   }
 
-  const data: OpenFgaResponse = await response.json();
+  const data = await response.json() as OpenFgaResponse;
   permissionResponse = data;
   return data;
 }
@@ -73,7 +73,7 @@ export async function addPolicy(entityName: string, accessType: string, userName
     body: JSON.stringify(requestBody),
   });
 
-  const data: OpenFgaResponse = await response.json();
+  const data = await response.json() as OpenFgaResponse;
   return data;
 }
 
@@ -100,6 +100,6 @@ export async function revokePolicy(entityName: string, accessType: string, userN
     body: JSON.stringify(requestBody),
   });
 
-  const data: OpenFgaResponse = await response.json();
+  const data = await response.json() as OpenFgaResponse;
   return data;
 }

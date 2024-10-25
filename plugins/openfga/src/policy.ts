@@ -8,15 +8,9 @@ import {
   PolicyQuery,
 } from '@backstage/plugin-permission-node';
 import { BackstageIdentityResponse } from '@backstage/plugin-auth-node';
-import { Config } from '@backstage/config';
 import { sendPermissionRequest } from './client';
 
 export class AOpenFgaCatalogPolicy implements PermissionPolicy {
-  urlConfig: Config;
-  constructor(config: Config) {
-    this.urlConfig = config;
-  }
-
   async handle(
     request: PolicyQuery,
     user: BackstageIdentityResponse,
