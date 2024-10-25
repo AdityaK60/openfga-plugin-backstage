@@ -127,7 +127,7 @@ export const OpenfgaCatalogComponent = () => {
   };
 
   return (
-    <Box sx={{ border: 1, borderRadius: 0, p: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 2 }}>
+    <Box sx={{ border: 1, borderRadius: 0, p: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
       <Box className={classes.box}>
         <Typography className={classes.info} variant="body2" gutterBottom>
           {user}
@@ -150,6 +150,7 @@ export const OpenfgaCatalogComponent = () => {
               ))}
             </Select>
           </FormControl>
+          <br/>
           <FormControl>
             <FormLabel>Select Action</FormLabel>
             <Select
@@ -215,6 +216,7 @@ export const OpenfgaCatalogComponent = () => {
               ))}
             </Select>
           </FormControl>
+          <br/>
           <FormControl>
             <FormLabel>Select Access Type</FormLabel>
             <Select
@@ -230,7 +232,7 @@ export const OpenfgaCatalogComponent = () => {
             </Select>
           </FormControl>
         </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2, gap: 1 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
           <Button
             className={`${classes.success} ${classes.button}`}
             variant="contained"
