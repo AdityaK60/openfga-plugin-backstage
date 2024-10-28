@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
   alert: {
     minHeight: '100px',
-    maxWidth : '30px',
+    maxWidth : '40px',
   },
 });
 
@@ -176,22 +176,22 @@ export const OpenfgaCatalogComponent = () => {
           </Button>
         </Box>
         {allowMessage && (
-  <Alert severity="success" className={classes.alert}>{allowMessage}</Alert>
-)}
-      {denyMessage && (
-        <>
-          {denyMessage.includes('Read') && (
-            <Alert severity="success" className={classes.alert}>
-             {user} have permission only to {selectedAction} the {selectedEntity}
-            </Alert>
-          )}
-          {denyMessage.includes('Delete') && (
-            <Alert severity="error" className={classes.alert}>
-              {user} Does not have permission to {selectedAction} the {selectedEntity}
-            </Alert>
-          )}
-        </>
-      )}
+          <Alert severity="success" className={classes.alert}>{allowMessage}</Alert>
+        )}
+        {denyMessage && (
+          <>
+            {denyMessage.includes('Read') && (
+              <Alert severity="success" className={classes.alert}>
+              {user} have permission only to Read the {selectedEntity}
+              </Alert>
+            )}
+            {denyMessage.includes('Delete') && (
+              <Alert severity="error" className={classes.alert}>
+                {user} Does not have permission to Delete the {selectedEntity}
+              </Alert>
+            )}
+          </>
+        )}
       </Box>
 
       <Box className={classes.box}>
