@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import { openFgaConfig } from './openFgaConfig';
 
 interface OpenFgaRequest {
   tuple_key: { user: string; relation: string; object: string };
@@ -17,9 +18,9 @@ export function getPermissionResponse(): OpenFgaResponse | null {
   return permissionResponse;
 }
 
-const openFgaBaseUrl = 'http://localhost:8080';
-const openFgaStoreId = '01JAW9SS1WBX5GG8GPR87WA3NE';
-const authorizationModelId = '01JAW9TRAASCJT070G92GHZV62';
+const openFgaBaseUrl = openFgaConfig.baseUrl;
+const openFgaStoreId = openFgaConfig.storeId;
+const authorizationModelId = openFgaConfig.authorizationModelId;
 
 export async function sendPermissionRequest(entityName: string, action: string, userName: any): Promise<OpenFgaResponse> {
   const url = `${openFgaBaseUrl}/stores/${openFgaStoreId}/check`;

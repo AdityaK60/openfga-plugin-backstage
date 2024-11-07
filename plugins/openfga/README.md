@@ -177,7 +177,7 @@ EXAMPLE RESPONSE BODY:
 
 ## USING OPENFGA FRONT END PLUGIN
 
-Before start accessing openFGA plugin in ui make sure you have updated following values in [client.ts] (https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/blob/master/plugins/openfga/src/client.ts)
+Before start accessing openFGA plugin in ui make sure you have updated following values in [openFgaConfig.ts] (https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/blob/master/plugins/openfga/src/openFgaConfig.ts)
 
  ![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/f20eeb43-c18f-48a5-96ba-70a3e216270c)
 
