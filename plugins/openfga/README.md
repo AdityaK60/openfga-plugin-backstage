@@ -24,7 +24,7 @@ Rules:
 
 ## CREATE A MODEL IN OPENFGA PLAYGROUND
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/701b0faa-8d77-4a58-9915-58a9b13cff8b)
+![playgroundmodel](./docs/model.png)
 
 ## RUNNING OPENFGA SERVER AND SETUP 
 
@@ -179,38 +179,38 @@ EXAMPLE RESPONSE BODY:
 
 Before start accessing openFGA plugin in ui make sure you have updated following values in [openFgaConfig.ts] (https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/blob/master/plugins/openfga/src/openFgaConfig.ts)
 
- ![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/f20eeb43-c18f-48a5-96ba-70a3e216270c)
+![openfgaconfig](./docs/openfgaconfig.png)
 
 
 HOME SCREEN:
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/adabd02b-dfbb-4560-af61-7f7c9a56b4bb)
+![homepage](./docs/homepage.png)
 
 
 BEFORE APPLYING POLICY:
 
 A guest user not able to unregister a entity
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/2489eace-9c3c-4e04-9093-eb4001c7ea21)
+![unregisterentity](./docs/unregisterentity.png)
 
 ADD POLICY:
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/6020f9fa-a19f-48c8-b1a3-c895ba2becc9)
+![addpolicy](./docs/addpolicy.png)
 
 APPLY POLICY:
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/d9ae4f43-b648-4e80-a9a2-9c072f94d781)
+![applypolicy](./docs/applypolicy.png)
 
 AFTER APPLYING POLICY:
 
 A guest user able to unregister a entity
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/20803b0c-4716-4780-9327-912d4a67c2e9)
+![afterpolicyentity](./docs/afterpolicyentity.png)
 
 
 REVOKE POLICY:
 
-![image](https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/assets/133481507/36aacc18-9615-4da9-8189-be7b4c9d3750)
+![revokepolicy](./docs/revokepolicy.png)
 
 
 
