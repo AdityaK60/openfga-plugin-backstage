@@ -31,4 +31,4 @@ This plugin wraps around the Backstage Permission Framework and uses the OPENFGA
 - OPENFGA will evaluate the the information against the policy and return a decision.
 
 
-FOR MORE INFORMATION AND SETUP PLEASE VISIT PLUGIN DOCS [OPENFGA PLUGIN] (https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/blob/master/plugins/openfga/README.md)
+FOR MORE INFORMATION AND SETUP PLEASE VISIT PLUGIN DOCS [OPENFGA PLUGIN] (/plugins/openfga/README.md)
