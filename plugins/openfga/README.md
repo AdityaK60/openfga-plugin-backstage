@@ -4,13 +4,31 @@ WELCOME TO OPENFGA BACKSTAGE PLUGIN .
 
 _This plugin was created through the Backstage CLI_
 
-## Getting started
+## Installation
 
-Your plugin has been added to the example app in this repository, meaning you'll be able to access it by running `yarn start` in the root directory, and then navigating to [/openfga](http://localhost:3000/openfga).
+```bash
+yarn add --cwd packages/backend @infosys/openfga-backstage-plugin
 
-You can also serve the plugin in isolation by running `yarn start` in the plugin directory.
-This method of serving the plugin provides quicker iteration speed and a faster startup and hot reloads.
-It is only meant for local development, and the setup for it can be found inside the [/dev](./dev) directory.
+Make the following changes to the `packages/backend/src/index.ts` file in your Backstage project.
+
+```diff
+import { createBackend } from '@backstage/backend-defaults';
+import { permissionModuleACatalogPolicy } from '../../../plugins/openfga/src/module';
+
+const backend = createBackend();
+backend.add(import('@backstage/plugin-app-backend/alpha'));
+backend.add(import('@backstage/plugin-auth-backend'));
+// ..... other plugins
++ backend.add(permissionModuleACatalogPolicy)
+
+comment following line:
+
+// permission plugin
+backend.add(import('@backstage/plugin-permission-backend/alpha'));
+// backend.add(
+//   import('@backstage/plugin-permission-backend-module-allow-all-policy'),
+// );
+```
 
 
 ## Example Catalog Permission policy using openFGA
