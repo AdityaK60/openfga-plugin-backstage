@@ -7,7 +7,7 @@ This plugin wraps around the Backstage Permission Framework and uses the OPENFGA
 ```bash
 yarn add --cwd packages/backend @infosysadmcoe/openfga-plugin-backstage
 
-Your plugin will be added to the example app in this repository, meaning you'll be able to access it by running yarn start in the root directory, and then navigating to /openfga.
+Your plugin will be added to the example app in this repository, meaning you'll be able to access it by running yarn start in the root directory, and then navigating to /openfga-permission-policy.
 
 Make the following changes to the `packages/backend/src/index.ts` file in your Backstage project.
 
