@@ -1,13 +1,13 @@
 # openfga
 
-WELCOME TO OPENFGA BACKSTAGE PLUGIN .
-
-_This plugin was created through the Backstage CLI_
+This plugin wraps around the Backstage Permission Framework and uses the OPENFGA client to evaluate policies. It will send a request to OPENFGA with the permission and identity information, OPENFGA will then evaluate the policy and return a decision, which is then passed back to the Permission Framework.
 
 ## Installation
 
 ```bash
-yarn add --cwd packages/backend @infosys/openfga-backstage-plugin
+yarn add --cwd packages/backend @infosysadmcoe/openfga-plugin-backstage
+
+Your plugin will be added to the example app in this repository, meaning you'll be able to access it by running yarn start in the root directory, and then navigating to /openfga.
 
 Make the following changes to the `packages/backend/src/index.ts` file in your Backstage project.
 
@@ -29,7 +29,6 @@ backend.add(import('@backstage/plugin-permission-backend/alpha'));
 //   import('@backstage/plugin-permission-backend-module-allow-all-policy'),
 // );
 ```
-
 
 ## Example Catalog Permission policy using openFGA
 
