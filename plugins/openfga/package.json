@@ -14,13 +14,13 @@
   "backstage": {
     "role": "frontend-plugin"
   },
-  "homepage": "https://github.com/Infosys-admcoe-modernization/openfga-plugin-backstage",
+  "homepage": "https://github.com/Infosys/openfga-plugin-backstage",
   "bugs": {
-    "url": "https://github.com/Infosys-admcoe-modernization/openfga-plugin-backstage/issues"
+    "url": "https://github.com/Infosys/openfga-plugin-backstage/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Infosys-admcoe-modernization/openfga-plugin-backstage"
+    "url": "https://github.com/Infosys/openfga-plugin-backstage"
   },
   "keywords": [
     "backstage",
