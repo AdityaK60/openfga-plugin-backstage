@@ -36,7 +36,7 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
-import { OpenfgaPage } from '@infosys/openfga-plugin-backstage';
+import { OpenfgaPage } from '@infosys_ltd/openfga-plugin-backstage';
 
 const app = createApp({
   apis,
