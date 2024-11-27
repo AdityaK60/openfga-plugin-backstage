@@ -4,8 +4,8 @@ This plugin wraps around the Backstage Permission Framework and uses the OPENFGA
 
 ## Installation
 
-```bash
-yarn add --cwd packages/backend @infosys/openfga-plugin-backstage
+````bash
+yarn add --cwd packages/backend @infosys_ltd/openfga-plugin-backstage
 
 Your plugin will be added to the example app in this repository, meaning you'll be able to access it by running yarn start in the root directory, and then navigating to /openfga-permission-policy.
 
@@ -28,7 +28,7 @@ backend.add(import('@backstage/plugin-permission-backend/alpha'));
 // backend.add(
 //   import('@backstage/plugin-permission-backend-module-allow-all-policy'),
 // );
-```
+````
 
 ## Example Catalog Permission policy using openFGA
 
@@ -36,16 +36,16 @@ Lets take a scenario a role based access for backstage catalog delete/ungersiter
 
 Rules:
 
-- A user who have OWNER access can read and delete the entity 
+- A user who have OWNER access can read and delete the entity
 - A user who have VIEWER access can only read the entity not delete the entity
 
 ## CREATE A MODEL IN OPENFGA PLAYGROUND
 
-![playgroundmodel](./docs/model.png)
+![playgroundmodel](./src/docs/model.png)
 
-## RUNNING OPENFGA SERVER AND SETUP 
+## RUNNING OPENFGA SERVER AND SETUP
 
-TO run a openfga in your local please follow below steps 
+TO run a openfga in your local please follow below steps
 
 OpenFGA is available on Dockerhub, so you can quickly start it using the in-memory datastore by running the following commands:
 
@@ -54,17 +54,16 @@ docker pull openfga/openfga
 docker run -p 8080:8080 -p 4000:4000 openfga/openfga run
 ```
 
-
-## ACCESSING OPENFGA FEATURES 
+## ACCESSING OPENFGA FEATURES
 
 OPENFGA Model and Features can be accessable with many ways please [visit](https://openfga.dev/docs/getting-started/create-store)
 
-In this following example OPENFGA API is used 
+In this following example OPENFGA API is used
 
-STEP 1: CREATE A STORE 
+STEP 1: CREATE A STORE
 
 ```
-REQUEST TYPE : POST 
+REQUEST TYPE : POST
 
 URL :  http://localhost:8080/stores
 
@@ -82,10 +81,9 @@ EXAMPLE RESPONSE BODY:
 "updated_at": "2024-07-08T04:32:20.951446991Z"
 }
 
-``` 
+```
 
-
-STEP 2 : GET A STORE 
+STEP 2 : GET A STORE
 
 ```
 REQUEST TYPE : GET
@@ -194,41 +192,34 @@ EXAMPLE RESPONSE BODY:
 
 ## USING OPENFGA FRONT END PLUGIN
 
-Before start accessing openFGA plugin in ui make sure you have updated following values in [openFgaConfig.ts] (https://github.com/AmbrishRamachandiran/openfga-backstage-plugin/blob/master/plugins/openfga/src/openFgaConfig.ts)
+Before start accessing openFGA plugin in ui make sure you have updated following values in [openFgaConfig.ts] (https://github.com/Infosys/openfga-plugin-backstage/blob/master/plugins/openfga/src/openFgaConfig.ts)
 
-![openfgaconfig](./docs/openfgaconfig.png)
-
+![openfgaconfig](./src/docs/openfgaconfig.png)
 
 HOME SCREEN:
 
-![homepage](./docs/homepage.png)
-
+![homepage](./src/docs/homepage.png)
 
 BEFORE APPLYING POLICY:
 
 A guest user not able to unregister a entity
 
-![unregisterentity](./docs/unregisterentity.png)
+![unregisterentity](./src/docs/unregisterentity.png)
 
 ADD POLICY:
 
-![addpolicy](./docs/addpolicy.png)
+![addpolicy](./src/docs/addpolicy.png)
 
 APPLY POLICY:
 
-![applypolicy](./docs/applypolicy.png)
+![applypolicy](./src/docs/applypolicy.png)
 
 AFTER APPLYING POLICY:
 
 A guest user able to unregister a entity
 
-![afterpolicyentity](./docs/afterpolicyentity.png)
-
+![afterpolicyentity](./src/docs/afterpolicyentity.png)
 
 REVOKE POLICY:
 
-![revokepolicy](./docs/revokepolicy.png)
-
-
-
-
+![revokepolicy](./src/docs/revokepolicy.png)
